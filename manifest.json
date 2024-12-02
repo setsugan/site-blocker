@@ -2,8 +2,11 @@
   "manifest_version": 3,
   "name": "Site Blocker",
   "version": "1.0",
-  "description": "特定のサイトをブロックします。",
-  "permissions": ["declarativeNetRequest", "storage"],
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage"
+  ],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background/background.js"
@@ -14,5 +17,10 @@
       "16": "icons/icon16.png"
     }
   },
-  "options_page": "options/options.html"
+  "web_accessible_resources": [
+    {
+      "resources": ["block/block.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     action: {
                       type: "redirect",
                       redirect: {
-                        url: chrome.runtime.getURL("block.html")
+                        url: chrome.runtime.getURL("../block/block.html")
                       }
                     },
                     condition: {
