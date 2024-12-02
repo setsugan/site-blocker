@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Blocker Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <h1>設定</h1>
+    <div class="section">
+      <h2>ブロック時間設定</h2>
+      <label>開始時間: <input type="time" id="startTime"></label>
+      <label>終了時間: <input type="time" id="endTime"></label>
+      <button id="saveTimeSettings">保存</button>
+    </div>
+    <div class="section">
+      <h2>ホワイトリスト</h2>
+      <textarea id="whitelist" rows="5" placeholder="許可するURLを1行ずつ入力"></textarea>
+      <button id="saveWhitelistSettings">保存</button>
+    </div>
+  </div>
+  <script src="options.js" defer></script>
+</body>
+</html>

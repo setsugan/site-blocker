@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome-extension://__EXTENSION_ID__/block.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "*://example.com/*",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

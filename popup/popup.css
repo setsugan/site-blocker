@@ -1,0 +1,88 @@
+/* 共通スタイル */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e; /* ダークトーン */
+  color: #ffffff;
+}
+
+.container {
+  padding: 20px;
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #00c1d4; /* アクセントカラー */
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#siteInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #00c1d4;
+  border-radius: 8px;
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+#addSiteButton {
+  background-color: #00c1d4;
+  color: #ffffff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#addSiteButton:hover {
+  background-color: #009ea8;
+}
+
+.site-list {
+  list-style: none;
+  padding: 0;
+}
+
+.site-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #2c2c2c;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #292929;
+}
+
+.site-list img {
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.site-list button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.site-list button:hover {
+  background-color: #c0392b;
+}
