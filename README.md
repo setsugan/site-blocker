@@ -1,18 +1,7 @@
-# サイトブロッカー Chrome 拡張機能
+![site-block](https://github.com/user-attachments/assets/8b3dfb00-9ec7-43f5-a6e4-b3d5d9e0f879)
 
-**Site Blocker** は、特定のウェブサイトを簡単にブロックできる Chrome 拡張機能です。ブロックされたサイトにはカスタムブロックページが表示され、作業に集中できる環境を提供します。
 
----
-
-## 特徴
-
-- **サイトブロック**：アクセスを制限する特定のURLをリストに追加。
-- **時間指定ブロック**：指定した時間帯のみブロックを有効化。
-- **ホワイトリスト**：ブロックされたサイト内でもアクセスを許可する特定のページを設定。
-- **ダークモード**：視認性を高めるカジュアルでクールなデザイン。
-- **ファビコン表示**：各サイトのファビコンをリストに表示し、直感的なUIを提供。
-
----
+**Site Blocker** は、ウェブサイトをブロックできる Chrome拡張機能です。
 
 ## インストール
 
@@ -47,35 +36,3 @@
 1. オプションページを開く。
 2. ホワイトリストに追加したいURLを1行ずつ入力。
 3. 「保存」ボタンをクリックして設定を適用。
-
----
-
-## 開発者情報
-
-### フォルダ構成
-
-```
-site-blocker/
-├── manifest.json         # 拡張機能の設定ファイル
-├── popup/
-│   ├── popup.html        # ポップアップのHTML
-│   ├── popup.js          # ポップアップのJavaScript
-│   ├── popup.css         # ポップアップのスタイル
-├── options/
-│   ├── options.html      # オプションページのHTML
-│   ├── options.js        # オプションページのJavaScript
-│   ├── options.css       # オプションページのスタイル
-├── background/
-│   ├── background.js     # バックグラウンドスクリプト
-├── block/
-│   ├── block.html        # ブロックページのHTML
-│   ├── block.css         # ブロックページのスタイル
-├── icons/
-│   ├── icon16.png        # 16px アイコン
-│   ├── icon48.png        # 48px アイコン
-│   ├── icon128.png       # 128px アイコン
-└── assets/
-   └── favicon-placeholder.png # デフォルトのファビコン画像
-```
-
----
